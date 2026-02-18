@@ -18,10 +18,14 @@ const Promocode = require('../api/promocode.js')
 app.use(express.static(path.join(__dirname)));
 
 
-
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname,"../"))
 });
+
+app.get("/adduser", (req, res) => {
+    res.sendFile(path.join(__dirname,"../adduser/"))
+});
+
 
 
 
