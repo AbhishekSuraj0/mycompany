@@ -42,7 +42,7 @@ async function addUser() {
     const userdata = { name, number, gmail, address, position, password, mob };
 
     try {
-        const res = await fetch("http://localhost:5000/add-user", {
+        const res = await fetch("https://mycompany-chi.vercel.app/add-user", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(userdata)

@@ -1,4 +1,4 @@
-const local = 'http://localhost:5000/'
+const local = 'https://mycompany-chi.vercel.app/'
 
 const number = localStorage.getItem("usernumber");
 const position1 = localStorage.getItem("position");

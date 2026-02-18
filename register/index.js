@@ -5,7 +5,7 @@ const ref = params.get("ref");
 if (ref) {
     document.getElementById("referrer").value = ref;
 }
-const local = 'http://localhost:5000/'
+const local = 'https://mycompany-chi.vercel.app/'
 // Register function
 async function registerUser() {
     const name = document.getElementById("name").value;

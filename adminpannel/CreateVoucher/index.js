@@ -1,4 +1,4 @@
-var url = 'http://localhost:5000/'
+var url = 'https://mycompany-chi.vercel.app/'
 
 async function saveData() {
 
