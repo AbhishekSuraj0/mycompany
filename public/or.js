@@ -5,7 +5,7 @@ var position = localStorage.getItem("position")
 
 
 
-const local = 'https://mycompany-chi.vercel.app/'
+const local = 'https://mycompany-chi.vercel.app/' || "http://localhost:5000/" ;
 
 async function loadUsers(a) {
     try {

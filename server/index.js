@@ -16,10 +16,30 @@ const Promocode = require('../api/promocode.js')
 
 // Static login folder
 app.use(express.static(path.join(__dirname)));
-// Correct sendFile (must be file, not folder)
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "login", "index.html"));
+
+var a = path.join(__dirname,"../")
+console.log(a)
+
+app.get("/adduser", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Read Mongo URI from dotenv
 const mongoURI = process.env.MONGO_URI || 3000
 
