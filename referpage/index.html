@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+
+<body style="position: relative; background-color: rgb(32, 105, 105);">
+    <div class="refer-box">
+
+        <h3>Your Referral Link</h3>
+        <div class="refer-input-area">
+            <input type="text" id="reflink" readonly />
+            <button onclick="copyRefLink()">Copy</button>
+        </div>
+
+    </div>
+    <div>
+        <div class="allbtn">
+            <button id="s" onclick="s()">Super ID</button>
+            <button id="m" onclick="m()">Master ID</button>
+            <button id="d" onclick="d()">Distributor ID</button>
+            <button id="c" onclick="c()">Customer ID</button>
+        </div><br>
+
+        <div class="supreid">
+            <table>
+                <thead>
+                    <th>Serial No.</th>
+                    <th>Name</th>
+                    <th>Number</th>
+                </thead>
+                <tbody id="view"></tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
