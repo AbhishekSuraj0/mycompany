@@ -1,5 +1,5 @@
 
-const local = 'http://localhost:5000/'
+const local = 'https://mycompany-chi.vercel.app/'
 
 async function loginUser() {
     const usernumber = document.getElementById("usernumber").value;
@@ -36,7 +36,7 @@ async function loadUsers(a, b ,c) {
                 localStorage.setItem("isLoggedIn", "true");
                 localStorage.setItem("usernumber", user.number);
                 localStorage.setItem("position", user.position);
-                window.location.href = "../main/"
+                window.location.href = "../public"
 
             } else {
                 alert("Please Inter Correct Password")
