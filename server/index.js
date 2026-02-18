@@ -17,11 +17,10 @@ const Promocode = require('../api/promocode.js')
 // Static login folder
 app.use(express.static(path.join(__dirname)));
 
-var a = path.join(__dirname,"../")
-console.log(a)
+
 
 app.get("/adduser", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname,"../"))
 });
 
 
