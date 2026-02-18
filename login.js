@@ -12,7 +12,6 @@ async function loginUser() {
     const device = { deviceId }
 
 
-
     if (usernumber === "" || password === "") {
         message.style.color = "red";
         message.innerHTML = "Please fill all fields ❌";

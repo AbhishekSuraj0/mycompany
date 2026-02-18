@@ -26,23 +26,6 @@ app.get("/adduser", (req, res) => {
     res.sendFile(path.join(__dirname,"../adduser/"))
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Read Mongo URI from dotenv
 const mongoURI = process.env.MONGO_URI || 3000
 
