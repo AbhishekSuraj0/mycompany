@@ -1,11 +1,7 @@
 var number = localStorage.getItem("usernumber")
 var position = localStorage.getItem("position")
 
-
-
-
-
-const local = "http://localhost:5000/" ;
+const local = "http://localhost:5000/";
 
 async function loadUsers(a) {
     try {
@@ -44,8 +40,7 @@ async function loadUsers(a) {
     >
         ${element.status}
     </a>
-</td>
-              
+</td>      
                       `;
                 historyTable.appendChild(tr);
 
@@ -179,7 +174,7 @@ async function comparepromocode() {
 }
 var withdradDiv = document.getElementById('withdradDiv1')
 async function withdraw() {
-    
+
     withdradDiv.style.display = "block"
 
 
@@ -231,7 +226,7 @@ async function withdrawnow() {
             });
 
             const userupdateamount = await amountupadet1.json()
-             withdradDiv.style.display = "none"
+            withdradDiv.style.display = "none"
             alert(userupdateamount.message)
 
         } else {
