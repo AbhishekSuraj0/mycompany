@@ -35,7 +35,7 @@ async function loadUsers(a, b ,c) {
                 localStorage.setItem("isLoggedIn", "true");
                 localStorage.setItem("usernumber", user.number);
                 localStorage.setItem("position", user.position);
-                window.location.href = "../public"
+                window.location.href = "/public/main"
 
             } else {
                 alert("Please Inter Correct Password")
