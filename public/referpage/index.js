@@ -1,4 +1,4 @@
-const local =  "http://localhost:5000/" ;
+const local = "https://iconstarbusiness.store/";
 
 const number = localStorage.getItem("usernumber");
 const position1 = localStorage.getItem("position");
@@ -12,12 +12,12 @@ var c1 = document.getElementById('c');
 
 
 
-if(position1 == "MasterID"){
-    s1.style.display = "none"  
+if (position1 == "MasterID") {
+    s1.style.display = "none"
 }
-if(position1 == "Distribitor"){
+if (position1 == "Distribitor") {
     m1.style.display = "none";
-    s1.style.display = "none"   
+    s1.style.display = "none"
 }
 // Generate referral link
 if (number) {
@@ -40,22 +40,34 @@ function copyRefLink() {
 async function user(a) {
 
     document.getElementById('view').innerHTML = "";
-    const res = await fetch(`${local}u`);
-    const data = await res.json();   
 
-    const userdata = data.find(u => number == u.number);
+
+
+
+    const res = await fetch(`${local}referlist`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({number})
+    });
+
+
+    const data = await res.json();
+    const userdata = data.Customer
+
+
+    console.log(userdata)
+;
+
     if (!userdata) {
         alert("User not found");
         return;
     }
-    
 
-    var abhishek = a;   // dynamic key
-    if (!userdata[abhishek]) {
-        console.log("Field not found:", abhishek);
-        return;
-    }
-    userdata[abhishek].forEach((o, index) => {
+
+   
+    userdata.forEach((o, index) => {
         var tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${index + 1}</td>
