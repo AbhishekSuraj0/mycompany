@@ -1,5 +1,5 @@
 
-const local = "http://localhost:5000/";
+const local = "https://iconstarbusiness.store/";
 
 async function loginUser() {
     const usernumber = document.getElementById("usernumber").value;
@@ -28,7 +28,7 @@ async function loadUsers(a, b, c) {
 
     try {
 
-        const res = await fetch(`${local}u`, {
+        const res = await fetch(`${local}api/u`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
