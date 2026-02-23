@@ -28,7 +28,7 @@ async function loadUsers(a, b, c) {
 
     try {
 
-        const res = await fetch(`${local}api/u`, {
+        const res = await fetch(`${local}/u`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
