@@ -1,7 +1,7 @@
 var number = localStorage.getItem("usernumber")
 var position = localStorage.getItem("position")
 
-const local = "https://iconstarbusiness.store/";
+const local = "https://backendcode-ecrf.onrender.com/";
 
 async function loadUsers(a) {
     const usernumber = a;

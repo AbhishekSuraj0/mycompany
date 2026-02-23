@@ -5,7 +5,7 @@ const ref = params.get("ref");
 if (ref) {
     document.getElementById("referrer").value = ref;
 }
-const local = "https://iconstarbusiness.store/" ;
+const local = "https://backendcode-ecrf.onrender.com/" ;
 // Register function
 async function registerUser() {
     const name = document.getElementById("name").value;
